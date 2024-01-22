@@ -57,7 +57,13 @@ mv .env.example .env.local
 
 Dans votre fichier .env.local, renseigner vos clés secrêtes Clerk et vos credentials MySQL
 
-### 4. Lancer le projet
+### 4. Créer la base de donnés SQL
+
+Exécutez le script SQL du fichier tables.sql (présent dans la racine du projet) dans votre nouvelle base de données.
+
+Vous pouvez utiliser PhpMyAdmin pour vous simplifier la tâche.
+
+### 5. Lancer le projet
 
 ```
 npm run build
