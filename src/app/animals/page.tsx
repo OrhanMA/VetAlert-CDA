@@ -41,7 +41,7 @@ export default function Animals() {
               ))}
             </ul>
           ) : (
-            <p className="text-2xl font-bold text-center w-full ">
+            <p className="text-2xl text-white font-bold text-center w-full ">
               Pas d&apos;animal enregistré pour l&apos;instant
             </p>
           )}

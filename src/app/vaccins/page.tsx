@@ -40,8 +40,9 @@ export default function Animals() {
               ))}
             </ul>
           ) : (
-            <p className="text-2xl font-bold text-center w-full ">
-              Pas de vaccination enregistrée pour l&apos;instant
+            <p className="text-2xl text-white font-bold text-center w-full ">
+              Pas de vaccination enregistrée pour l&apos;instant. Ajoutez
+              d&apos;abord un animal pour lui associer une vaccination.
             </p>
           )}
         </>
