@@ -1,11 +1,11 @@
 // api.ts
 
+/**
+ * @params endpoint - l'endpoint à atteindre sur l'API
+ * @params method - la méthode de la requête HTTP, 'GET' par défaut si aucun paramètre n'est donné lors de l'appel.
+ * Ne pas mettre de / sur l'enpoint quand on call la fonction car il est déjà présent dans l'url.
+ */
 export async function fetchNextApi(endpoint: string, method: string = "GET") {
-  /**
-   * @params endpoint - l'endpoint à atteindre sur l'API
-   * @params method - la méthode de la requête HTTP, 'GET' par défaut si aucun paramètre n'est donné lors de l'appel.
-   * Ne pas mettre de / sur l'enpoint quand on call la fonction car il est déjà présent dans l'url.
-   */
   const url = `http://localhost:3000/api/${endpoint}`;
   const options = {
     method: method,
@@ -26,6 +26,10 @@ export async function fetchNextApi(endpoint: string, method: string = "GET") {
   }
 }
 
+/**
+ * function countAnimals
+ * @returns un objet contenant le nombre total d'animal en base de données
+ */
 export async function countAnimals() {
   try {
     const response = await fetch("http://localhost:3000/api/animals/count", {
@@ -47,6 +51,10 @@ export async function countAnimals() {
   }
 }
 
+/**
+ * function countVaccinations
+ * @returns un objet contenant le nombre total de vaccinations en base de données
+ */
 export async function countVaccinations() {
   try {
     const response = await fetch("http://localhost:3000/api/vaccins/count", {

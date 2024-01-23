@@ -12,6 +12,10 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
+/**
+ * @param vaccination: un objet de type Vaccination (voir les types dans le ficher types.ts)
+ * @role Affiche une vue simplifiée des informations concernant une vaccination
+ */
 export default function VaccinationPreview({
   vaccination,
 }: {

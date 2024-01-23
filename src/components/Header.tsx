@@ -10,6 +10,12 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { UserButton } from "@clerk/nextjs";
+
+
+/**
+ * Barre de navigation pour l'entièreté du site
+ * Utilise le UserButton de Clerk pour le gestion de profil de l'utilisateur et le lien de logout.
+ */
 export function Header() {
   return (
     <div className="w-full bg-white flex items-center justify-between p-2 sticky top-0 z-10">

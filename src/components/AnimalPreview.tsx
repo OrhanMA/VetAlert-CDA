@@ -10,6 +10,10 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
+/**
+ * @param animal: un objet de type Animal (voir les types dans le ficher types.ts)
+ * @role Affiche une vue simplifiée des informations concernant un animal
+ */
 export default function AnimalPreview({ animal }: { animal: Animal }) {
   return (
     <Card className="flex flex-col my-4 p-6 md:p-4 w-full sm:w-3/4 md:w-2/5 lg:w-1/4 xl:w-1/5">

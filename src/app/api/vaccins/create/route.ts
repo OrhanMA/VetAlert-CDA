@@ -1,8 +1,6 @@
 import { pool } from "@/app/database/mysql-config";
 import { auth } from "@clerk/nextjs";
 
-// ... (import statements)
-
 export async function POST(request: Request): Promise<Response> {
   const { userId: authUserId } = auth();
 

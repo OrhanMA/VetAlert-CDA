@@ -6,11 +6,10 @@ import { Formik, Form } from "formik";
 import { useAuth } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 import { FieldGroup } from "@/components/FieldGroup";
-
 import * as React from "react";
 import { format } from "date-fns";
 import { Calendar as CalendarIcon } from "lucide-react";
-
+import { formatToDashFormat } from "@/helper-function";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
@@ -23,7 +22,7 @@ import { fr } from "date-fns/locale/fr";
 
 export default function VaccinCreate() {
   const [isSubmitting, setSubmitting] = useState(false);
-  const [date, setDate] = React.useState<any>(new Date());
+  const [date, setDate] = useState<any>(new Date());
   const { userId } = useAuth();
   const searchParams = useSearchParams();
   const router = useRouter();
@@ -55,7 +54,7 @@ export default function VaccinCreate() {
           animal_id: Number(animal_id),
           user_id: userId,
           // Transforme la date en format YYYY-MM-DD pour MySQL
-          vaccination_date: new Date().toISOString().split("T")[0],
+          vaccination_date: formatToDashFormat(date),
         }}
         validate={(values) => {
           const errors: any = {};
@@ -67,6 +66,7 @@ export default function VaccinCreate() {
           return errors;
         }}
         onSubmit={async (values, { setSubmitting }) => {
+          values.vaccination_date = formatToDashFormat(date);
           try {
             const response = await fetch("/api/vaccins/create", {
               method: "POST",

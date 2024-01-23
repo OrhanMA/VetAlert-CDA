@@ -7,6 +7,10 @@ import {
   CardDescription,
 } from "./ui/card";
 import Link from "next/link";
+
+/**
+ * Composant pour l'aperçu des nombres d'animaux et vaccinations dans la page dashboard
+ */
 export function PreviewStat({
   number,
   element,

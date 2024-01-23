@@ -1,3 +1,9 @@
+/**
+ * Affiche un row d'informations pour pour les différents Card components (Animal, Vaccination...)
+ * @param item_name: string: Le nom de l'élément à afficher comme label
+ * @param value: string: Le valeur de l'élement à afficher
+ */
+
 export function CardItem({
   item_name,
   value,

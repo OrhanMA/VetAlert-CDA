@@ -11,7 +11,10 @@ import {
 } from "@/components/ui/card";
 
 export default async function Home() {
-  const { userId } = auth();
+  /**
+   * utilisation des hooks de Clerk pour récupérer le state d'authentification côté server comme clients
+   * @ressource https://clerk.com/docs/quickstarts/nextjs
+   */
   const user = await currentUser();
 
   return (
@@ -39,14 +42,16 @@ export default async function Home() {
           className="aspect-auto object-cover"
           alt="A dog sleeping under clothes. source: Sdf Rahbar sur Unsplash"
         />
-        <a
-          href={
-            "https://unsplash.com/fr/photos/chien-brun-et-blanc-recouvert-dune-couverture-verte-et-blanche-XMla4ZtB-BU"
-          }
-          className="text-sm text-white"
-        >
-          source: Sdf Rahbar sur Unsplash
-        </a>
+        <div className="flex justify-center">
+          <a
+            href={
+              "https://unsplash.com/fr/photos/chien-brun-et-blanc-recouvert-dune-couverture-verte-et-blanche-XMla4ZtB-BU"
+            }
+            className="text-sm text-white font-bold hover:underline"
+          >
+            source: Sdf Rahbar sur Unsplash
+          </a>
+        </div>
       </div>
     </main>
   );

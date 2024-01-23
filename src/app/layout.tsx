@@ -29,3 +29,7 @@ export default function RootLayout({
     </ClerkProvider>
   );
 }
+
+/**
+ * Mise en place d'un background pour l'entièreté de l'application modificaiton de la metadata de l'application
+ */

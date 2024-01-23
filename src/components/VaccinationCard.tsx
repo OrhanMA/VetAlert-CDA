@@ -11,6 +11,11 @@ import {
 } from "./ui/card";
 import { CardItem } from "./CardItem";
 import { formatDate8601 } from "@/helper-function";
+
+/**
+ * @param vaccination: un objet de type Vaccination (voir les types dans le ficher types.ts)
+ * @role Affiche le détails des informations concernant une vaccination
+ */
 export function VaccinationCard({ vaccination }: { vaccination: Vaccination }) {
   return (
     <div className="flex flex-col items-center">

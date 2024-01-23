@@ -1,4 +1,10 @@
 import { Field, ErrorMessage } from "formik";
+
+/**
+ * Composant Regroupant les éléments d'un champ pour les formulaires Formik dans les pages create et update
+ * @param field_name: string: le nom du champ
+ * @param label: string: le label du champ
+ */
 export function FieldGroup({
   field_name,
   label,

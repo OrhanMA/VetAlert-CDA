@@ -10,6 +10,10 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
+/**
+ * @param animal: un objet de type Animal (voir les types dans le ficher types.ts)
+ * @role Affiche le détails des informations concernant un animal
+ */
 export function AnimalCard({ animal }: { animal: Animal }) {
   return (
     <Card className="p-6 my-4 sm:w-2/3 lg:w-1/2 xl:w-1/3">
