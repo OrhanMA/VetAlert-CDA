@@ -8,23 +8,6 @@ Ce projet était une introduction dont le but était de montrer ce qu'on savait 
 
 Pour réaliser ce projet, j'ai décidé d'utiliser le framework [Next.js](https://nextjs.org/), qui est la façon la plus populaire de travailler avec React ces dernières années. J'ai décidé d'utiliser l'App router, un changement drastique dans le paradigme de Next.js, pour pouvoir apprendre ses dernières fonctionnalités.
 
-## Stack Technique / outils
-
-Autres outils utilisés:
-
-- [Next.js](https://nextjs.org/)
-- [MySQL](https://www.mysql.com/fr/)
-- [MySQL driver pour Node.js:](https://www.npmjs.com/package/mysql)
-- [Tailwind CSS](https://tailwindcss.com)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Clerck auth](https://clerk.com/)
-- [Formik, a way to work with React forms easily](https://formik.org/docs/overview)
-- [Date-fns, modern Javascript data utility](https://date-fns.org/)
-
-Crédit photo utilisée:
-Photo unsplash:
-[Sdf Rahbar](https://unsplash.com/fr/photos/chien-brun-et-blanc-recouvert-dune-couverture-verte-et-blanche-XMla4ZtB-BU) chiots qui dort sous des vêtements
-
 ## Installation du projet
 
 ### Prérequis
@@ -77,3 +60,21 @@ npm run dev
 ```
 
 Rendez-vous sur http://localhost:3000/ pour essayer l'application.
+
+## Stack Technique / outils
+
+Autres outils utilisés:
+
+- [Next.js](https://nextjs.org/)
+- [MySQL](https://www.mysql.com/fr/)
+- [MySQL driver pour Node.js:](https://www.npmjs.com/package/mysql)
+- [Tailwind CSS](https://tailwindcss.com)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Clerck auth](https://clerk.com/)
+- [Formik, a way to work with React forms easily](https://formik.org/docs/overview)
+- [Date-fns, modern Javascript data utility](https://date-fns.org/)
+
+Crédits:
+
+- Photo unsplash: [Sdf Rahbar](https://unsplash.com/fr/photos/chien-brun-et-blanc-recouvert-dune-couverture-verte-et-blanche-XMla4ZtB-BU) chiots qui dort sous des vêtements
+- Favicon dog: https://favicon.io/emoji-favicons/dog/
